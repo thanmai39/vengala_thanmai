@@ -18,6 +18,7 @@ def calculate_totals(df: DataFrame) -> DataFrame:
 
 
 def segment_customers(df):
+    # Scenario 4: accidental change on main
     """RFM-based customer segmentation for MLAPP-1234."""
     from pyspark.sql import functions as F
     return df.withColumn(
