@@ -16,7 +16,7 @@ def calculate_totals(df: DataFrame) -> DataFrame:
         F.sum("amount").alias("total_spend")
     )
 
-# Case B: accidental change committed directly to main
+
 def segment_customers(df):
     """RFM-based customer segmentation for MLAPP-1234."""
     from pyspark.sql import functions as F
